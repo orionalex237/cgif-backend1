@@ -1,4 +1,4 @@
-HEAD
+
 node_modules
 dist
 .env
@@ -6,7 +6,7 @@ dist
 *.log
 .vscode
 .DS_Store
-=======
+
 # ─── CGIF — .gitignore ───────────────────────────────────────────────────────
 
 # ── SECRETS — NE JAMAIS COMMITER ─────────────────────────────
