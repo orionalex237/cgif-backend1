@@ -1,3 +1,4 @@
+HEAD
 node_modules
 dist
 .env
@@ -5,3 +6,59 @@ dist
 *.log
 .vscode
 .DS_Store
+=======
+# ─── CGIF — .gitignore ───────────────────────────────────────────────────────
+
+# ── SECRETS — NE JAMAIS COMMITER ─────────────────────────────
+.env
+.env.local
+.env.production
+.env.*.local
+
+# ── Dépendances ───────────────────────────────────────────────
+node_modules/
+.pnp
+.pnp.js
+
+# ── Build outputs ─────────────────────────────────────────────
+dist/
+build/
+.next/
+out/
+
+# ── Prisma ────────────────────────────────────────────────────
+# Ne pas ignorer les migrations — elles doivent être committées
+# prisma/migrations/   ← NE PAS DÉCOMMENTER
+
+# ── Logs ──────────────────────────────────────────────────────
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ── Uploads locaux ────────────────────────────────────────────
+backend/uploads/
+frontend/dist/
+
+# ── OS ────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── IDE ───────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── Tests ─────────────────────────────────────────────────────
+coverage/
+.vitest/
+
+# ── TypeScript ────────────────────────────────────────────────
+*.tsbuildinfo
+
+# ── Docker ────────────────────────────────────────────────────
+# Ne pas ignorer docker-compose.yml — il doit être commité
+# .dockerignore est dans chaque sous-dossier
+3f53472 (move .gitignore to backend folder)
